@@ -1,0 +1,78 @@
+.services {
+    @apply mt-36;
+
+    .topic-header {
+        p {
+            width: 580px;
+        }
+    }
+
+    .services-content {
+        @apply mt-20;
+
+        .services-content-row {
+            @apply  flex justify-between;
+
+            .item-background-grey {
+                background-color: #F3F3F3;
+            }
+            .item-background-green {
+                background-color:#B9FF66;
+            }
+            .item-background-black {
+                background-color: #191A23;
+            }
+
+            .service-content-left-item {
+                @apply mr-6;
+            }
+
+            .services-content-item {
+                @apply border-2 border-b-8 border-black p-12 flex justify-between mt-10;
+                width: 600px;
+                border-radius: 45px;
+
+                .item-label-grey {
+                    h3 {
+                        background-color: #F3F3F3
+                    }
+                }
+                .item-label-green {
+                    h3 {
+                        background-color:#B9FF66
+                    }
+                }
+                .item-label-dark {
+                    h3 {
+                        background-color:#191A23
+                    }
+                }
+                
+                .services-content-item-info {
+                    @apply flex flex-col justify-between w-fit h-52;
+                    .service-content-item-label {
+                        h3 {
+                            @apply rounded-md w-fit h-10 px-2;
+                        }
+                    }
+
+                    .service-content-item-link {
+                        @apply flex w-fit mt-10;
+
+                        span {
+                            @apply ml-4 self-center;
+                        }
+                    }
+                }
+    
+                .services-content-item-image {
+                    
+                    @apply flex;
+                    img {
+                        @apply self-center;
+                    }
+                }
+            }
+        }        
+    }
+}
