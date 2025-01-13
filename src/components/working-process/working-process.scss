@@ -1,0 +1,49 @@
+.working-process {
+    @apply mt-20;
+
+    .working-process-content {
+        @apply flex flex-col justify-between mt-20;
+
+        .active-content {            
+            background-color: #B9FF66;
+        }
+
+        .inactive-content {
+            background-color: #F3F3F3;
+
+            .working-process-content-item-border {
+                display: none;
+            }
+        }
+
+        .working-process-content-item {
+            @apply mb-7;
+            padding: 41px 60px 41px 60px;
+            border-radius: 45px;
+            border-width: 1px 1px 5px 1px;
+            border-color: black;
+
+            .working-process-content-item-header {
+                @apply flex justify-between;
+
+                .working-process-content-item-header-label {
+                    @apply flex;
+                    .number {
+                        @apply font-medium mr-6;
+                        font-size: 60px;
+                        line-height: 77px;
+                    }
+                    h3 {
+                        @apply self-center
+                    }
+                }
+            }
+
+            .working-process-content-item-border {
+                @apply w-full my-10;
+                border-color: black;
+                border-width: 1px;
+            }
+        }
+    }
+}
