@@ -1,0 +1,27 @@
+.header {
+    @apply flex mt-8 justify-between;
+
+    .positivus-logo {
+        @apply flex align-text-top mr-4;
+
+        .logo-icon {
+            @apply mr-3 self-center;
+        }
+    }
+
+    .nav-bar {
+        @apply flex align-baseline text-xl font-normal align-baseline grow max-w-3xl;
+
+        .links-list {
+            @apply flex justify-between grow;
+
+            li {
+                @apply self-center; 
+            }
+
+            .quote-request-button {
+                @apply border-black border-2 rounded-xl py-5 px-9 text-center;
+            }
+        }
+    }
+}
