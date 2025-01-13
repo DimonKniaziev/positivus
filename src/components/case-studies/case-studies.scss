@@ -1,0 +1,35 @@
+.case-studies {
+    @apply mt-20;
+
+    .topic-header {
+        p {
+            width: 580px;
+        }
+    }
+
+    .case-studies-content {
+        @apply flex text-white mt-20;
+        background-color: #191A23;
+        border-radius: 45px;
+        padding: 70px 60px 70px 60px;
+
+        .case-studies-content-item {
+            @apply flex flex-col justify-between;
+
+            a {
+                @apply flex;
+                color: #B9FF66; 
+
+                span {
+                    @apply mr-4;
+                }
+            }
+        }
+
+        .case-studies-content-border {
+            @apply border-white mx-16;
+            height: 186px;
+            border-width: 1px;
+        }
+    }
+}
