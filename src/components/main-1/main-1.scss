@@ -1,0 +1,25 @@
+.main-1 {
+    @apply flex justify-between pt-16;
+
+    .main-1-contant {
+        @apply flex flex-col justify-between;
+        width: 515px;
+
+        span {
+            @apply text-xl;
+            width: 460px;
+        }
+
+        button {
+            @apply rounded-2xl bg-black text-white px-9 py-5 w-fit;
+        }
+    }
+    .main-1-image {
+        @apply flex;
+        width: 515px;
+        flex-shrink: 0;
+    }
+}
+.main-1-companies {
+    @apply flex justify-between mt-24;
+}
