@@ -1,12 +1,12 @@
 import React from "react";
-import './contact-us.scss';
-import contactUsImage from './contact-us-image.svg';
+import './get-proposal.scss';
+import getProposal from './get-proposal-image.svg';
 import Image from "next/image";
 
-const ContactUs: React.FC = () => {
+const GetProposal: React.FC = () => {
     return (
-        <div className="contact-us">
-            <div className="contact-us-content">
+        <div className="get-proposal">
+            <div className="get-proposal-content">
                 <h3>
                     Let’s make things happen
                 </h3>
@@ -18,7 +18,7 @@ const ContactUs: React.FC = () => {
                 </button>
             </div>
             <Image
-                src={contactUsImage}
+                src={getProposal}
                 width={359}
                 height={395}
                 alt="contact us image"
@@ -27,4 +27,4 @@ const ContactUs: React.FC = () => {
     )
 }
 
-export default ContactUs;
+export default GetProposal;
