@@ -7,7 +7,7 @@
         }
     }
     .contact-us-content {
-        @apply flex mt-20;
+        @apply flex mt-20 overflow-hidden;
         background-color: #F3F3F3;
         border-radius: 45px;
         padding: 60px 100px 80px 100px;
@@ -34,7 +34,7 @@
                     line-height: 28px;
                 }
 
-                input {
+                input, textarea{
                     @apply border-black w-full;
                     padding: 18px 30px 18px 30px;
                     border-radius: 14px;
@@ -45,8 +45,8 @@
                 @apply mt-10;
             }
             .message-input {
-                input {
-                    @apply box-border;
+                textarea {
+                    @apply box-border resize-none;
                     height: 190px;
                 }
             }

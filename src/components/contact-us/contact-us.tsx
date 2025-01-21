@@ -34,7 +34,7 @@ const ContactUs: React.FC = () => {
                     </div>
                     <div className="message-input text-input">
                         <span>Message*</span>
-                        <input type="text-area" placeholder="Message"/>
+                        <textarea placeholder="Message"/>
                     </div>
                     <button>Send Message</button>
                 </div>
