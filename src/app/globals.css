@@ -37,7 +37,7 @@ body {
     }
 
 .topic-header {
-    @apply flex;
+    @apply flex flex-col items-center;
 
     .topic-header-label {
         @apply rounded-lg w-fit px-2 mr-10 flex;
@@ -78,6 +78,15 @@ body {
         @apply font-normal;
         font-size: 18px;
         line-height: 23px;
+    }
+
+    .topic-header {
+        @apply flex flex-row;
+    
+        .topic-header-label {
+            @apply rounded-lg w-fit px-2 mr-10 flex;
+            background-color: #B9FF66;
+        }
     }
 }
 
