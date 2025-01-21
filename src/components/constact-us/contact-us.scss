@@ -1,0 +1,64 @@
+.contact-us {
+    @apply mt-20;
+
+    .topic-header {
+        p {
+            width: 323px;
+        }
+    }
+    .contact-us-content {
+        @apply flex mt-20;
+        background-color: #F3F3F3;
+        border-radius: 45px;
+        padding: 60px 100px 80px 100px;
+
+        .contact-form {
+            @apply flex flex-col w-full mr-auto;
+            max-width: 560px;
+
+            .radio-container {
+                @apply flex align-middle;
+
+                input {
+                    @apply w-7 h-7 mr-3 bg-green-600;
+                }
+                label {
+                    @apply mr-8 self-center;
+                }
+            }
+            .text-input {
+                @apply flex flex-col mt-5;
+                
+                span {
+                    @apply text-base font-normal;
+                    line-height: 28px;
+                }
+
+                input {
+                    @apply border-black w-full;
+                    padding: 18px 30px 18px 30px;
+                    border-radius: 14px;
+                    border-width: 1px;
+                }
+            }
+            .name-input {
+                @apply mt-10;
+            }
+            .message-input {
+                input {
+                    @apply box-border;
+                    height: 190px;
+                }
+            }
+            button {
+                @apply text-white bg-black mt-10;
+                border-radius: 14px;
+                padding: 20px 35px 20px 35px;
+            }
+        }
+        img {
+            margin-right: -424px;
+            margin-left: 20px;
+        }
+    }
+}
