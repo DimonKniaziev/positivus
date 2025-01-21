@@ -4,13 +4,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
 body {
-    @apply px-24 text-lg font-normal;
+    @apply px-5 text-base font-normal;
+}
+    h1 {
+        @apply font-medium;
+        font-size: 43px;
+        line-height: 55px;
+    }
+
+    h2 {
+        @apply font-medium;
+        font-size: 36px;
+        line-height: 46px;
+    }
+
+    h3 {
+        @apply font-medium;
+        font-size: 26px;
+        line-height: 33px;
+    }
+
+    h4 {
+        @apply font-medium;
+        font-size: 18px;
+        line-height: 23px;
+    }
+
+    p {
+        @apply font-normal;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+.topic-header {
+    @apply flex;
+
+    .topic-header-label {
+        @apply rounded-lg w-fit px-2 mr-10 flex;
+        background-color: #B9FF66;
+    }
+}
+
+@screen lg {
+    body {
+        @apply text-lg;
+        padding: 0px 50px;
+    }
+
     h1 {
         @apply font-medium;
         font-size: 60px;
         line-height: 77px;
     }
-
     h2 {
         @apply font-medium;
         font-size: 40px;
@@ -34,13 +79,10 @@ body {
         font-size: 18px;
         line-height: 23px;
     }
+}
 
-    .topic-header {
-        @apply flex;
-
-        .topic-header-label {
-            @apply rounded-lg w-fit px-2 mr-10 flex;
-            background-color: #B9FF66;
-        }
+@screen xl {
+    body {
+        padding: 0px 100px;
     }
 }

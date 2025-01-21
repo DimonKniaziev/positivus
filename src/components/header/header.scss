@@ -2,15 +2,14 @@ header {
     @apply flex mt-8 justify-between;
 
     .positivus-logo {
-        @apply flex align-text-top mr-4;
-
-        .logo-icon {
-            @apply mr-3 self-center;
-        }
+        @apply mr-4 self-center;
+        width: 144px;
+        height: 24px;        
     }
 
     .nav-bar {
         @apply flex align-baseline text-xl font-normal align-baseline grow max-w-3xl;
+        display: none;
 
         .links-list {
             @apply flex justify-between grow;
@@ -20,8 +19,23 @@ header {
             }
 
             .quote-request-button {
-                @apply border-black border-2 rounded-xl py-5 px-9 text-center;
+                @apply border-black border-2 rounded-xl text-center;
+                padding: 20px 35px 20px 35px;
             }
+        }
+    }
+
+    @screen lg {
+        .positivus-logo {
+            width: 220px;
+            height: 36px;
+        }
+        .mobile-menu-button {
+            display: none;
+        }
+
+        .nav-bar {
+            display: block;
         }
     }
 }
