@@ -19,10 +19,14 @@ const ContactUs: React.FC = () => {
             <div className="contact-us-content">
                 <div className="contact-form">
                     <div className="radio-container">
-                        <input type="radio" id="say-hi-radio-button" name="option"/>
-                        <label htmlFor="say-hi-radio-button"><p>Say Hi</p></label>
-                        <input type="radio" id="get-a-quote-radio-button" name="option"/>
-                        <label htmlFor="get-a-quote-radio-button"><p>Get a Quote</p></label>
+                        <div className="radio-item-container">
+                            <input type="radio" id="say-hi-radio-button" name="option"/>
+                            <label htmlFor="say-hi-radio-button"><p>Say Hi</p></label>
+                        </div>
+                        <div className="radio-item-container">
+                            <input type="radio" id="get-a-quote-radio-button" name="option"/>
+                            <label htmlFor="get-a-quote-radio-button"><p>Get a Quote</p></label>
+                        </div>                        
                     </div>
                     <div className="name-input text-input">
                         <span>Name</span>

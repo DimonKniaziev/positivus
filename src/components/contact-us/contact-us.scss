@@ -1,5 +1,5 @@
 .contact-us {
-    @apply mt-20;
+    @apply mt-10;
 
     .topic-header {
         p {
@@ -7,23 +7,29 @@
         }
     }
     .contact-us-content {
-        @apply flex mt-20 overflow-hidden;
+        @apply flex mt-10 overflow-hidden;
         background-color: #F3F3F3;
         border-radius: 45px;
-        padding: 60px 100px 80px 100px;
+        padding: 40px 30px 40px 30px;
 
         .contact-form {
             @apply flex flex-col w-full mr-auto;
-            max-width: 560px;
 
             .radio-container {
-                @apply flex align-middle;
+                @apply flex align-middle justify-between;
+                padding-left: 52px;
+                padding-right: 52px;
 
-                input {
-                    @apply w-7 h-7 mr-3 bg-green-600;
-                }
-                label {
-                    @apply mr-8 self-center;
+                .radio-item-container {
+                    @apply flex w-fit;
+
+                    input {
+                        @apply w-7 h-7 mr-3 bg-green-600;
+                    }
+
+                    label {
+                        @apply self-center;
+                    }
                 }
             }
             .text-input {
@@ -57,8 +63,91 @@
             }
         }
         img {
+            @apply flex shrink-0;
+            display: none;
             margin-right: -424px;
             margin-left: 20px;
+        }
+    }
+}
+
+@screen md {
+    .contact-us {
+        .contact-us-content {
+            .contact-form {
+                .radio-container {
+                    @apply flex justify-start;
+                    gap: 28px;
+                }
+            }
+        }
+    }
+}
+
+@screen lg {
+    .contact-us {
+        @apply mt-20;
+    
+        .topic-header {
+            p {
+                width: 323px;
+            }
+        }
+        .contact-us-content {
+            @apply flex mt-20 overflow-hidden;
+            background-color: #F3F3F3;
+            border-radius: 45px;
+            padding: 60px 100px 80px 100px;
+    
+            .contact-form {
+                @apply flex flex-col w-full mr-auto;
+                max-width: 560px;
+    
+                .radio-container {
+                    @apply flex align-middle;
+    
+                    input {
+                        @apply w-7 h-7 mr-3 bg-green-600;
+                    }
+                    label {
+                        @apply mr-8 self-center;
+                    }
+                }
+                .text-input {
+                    @apply flex flex-col mt-5;
+                    
+                    span {
+                        @apply text-base font-normal;
+                        line-height: 28px;
+                    }
+    
+                    input, textarea{
+                        @apply border-black w-full;
+                        padding: 18px 30px 18px 30px;
+                        border-radius: 14px;
+                        border-width: 1px;
+                    }
+                }
+                .name-input {
+                    @apply mt-10;
+                }
+                .message-input {
+                    textarea {
+                        @apply box-border resize-none;
+                        height: 190px;
+                    }
+                }
+                button {
+                    @apply text-white bg-black mt-10;
+                    border-radius: 14px;
+                    padding: 20px 35px 20px 35px;
+                }
+            }
+            img {
+                display: block;
+                margin-right: -424px;
+                margin-left: 20px;
+            }
         }
     }
 }
