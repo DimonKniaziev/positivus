@@ -1,16 +1,18 @@
 .team {
-    @apply mt-12;
+    @apply mt-5;
     .topic-header {
         p {
-            width: 473px;
+            @apply w-fit;
         }
     }
 
     .team-content {
-        @apply mt-10 flex flex-wrap justify-between;
+        @apply mt-0 flex flex-wrap justify-around gap-10 mt-10;
+
         .team-content-item {
-            @apply flex flex-col mt-10;
-            width: 387px;
+            @apply flex flex-col;
+            flex: 1 1 380px;
+            max-width: 500px;
             height: 331px;
             border-radius: 45px;
             padding: 40px 35px 40px 35px;
@@ -21,7 +23,7 @@
                 @apply flex;
 
                 .team-content-item-header-right {
-                    @apply flex flex-col justify-between w-full ml-5;
+                    @apply flex flex-col w-full justify-between ml-5;
 
                     .team-content-item-name {
                         @apply flex flex-col justify-end;
@@ -34,7 +36,7 @@
             }
 
             .team-content-item-border {
-                @apply w-full border-black my-7;
+                @apply border-black my-7;
                 border-width: 1px;
             }
         }
@@ -43,9 +45,49 @@
         @apply mt-10 flex justify-end;
         
         button {
-            @apply bg-black text-white py-5 px-9;
-            width: 269px;
+            @apply bg-black text-white py-5 px-9 w-full;
             border-radius: 14px;
+        }
+    }
+}
+
+@screen lg {
+    .team {
+        @apply mt-5;
+        .topic-header {
+            p {
+                width: 473px;
+            }
+        }
+    
+        .team-content {
+            @apply mt-10 flex flex-wrap justify-between;
+            .team-content-item {
+                .team-content-item-header {
+                    @apply flex;
+    
+                    .team-content-item-header-right {
+                        @apply flex flex-col justify-between ml-5;
+    
+                        .team-content-item-name {
+                            @apply flex flex-col justify-end;
+                        }
+        
+                        img {
+                            @apply self-end;
+                        }
+                    }
+                }
+            }
+        }
+        .team-content-button-container {
+            @apply mt-10 flex justify-end;
+            
+            button {
+                @apply bg-black text-white py-5 px-9;
+                width: 269px;
+                border-radius: 14px;
+            }
         }
     }
 }
