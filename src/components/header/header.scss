@@ -1,8 +1,9 @@
 header {
     @apply flex mt-8 justify-between;
+    gap: 15px;
 
     .positivus-logo {
-        @apply mr-4 self-center;
+        @apply self-center;
         width: 144px;
         height: 24px;        
     }
