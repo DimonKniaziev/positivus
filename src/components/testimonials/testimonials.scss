@@ -3,12 +3,12 @@
     
     .topic-header {
         p {
-            width: 450px;
+            @apply w-fit;
         }
     }
 
     .testimonials-content {
-        @apply mt-12  text-white w-full pt-20 pb-12 overflow-hidden;
+        @apply mt-12 text-white w-full pt-20 pb-12 overflow-hidden;
         border-radius: 45px;
         background-color: #191A23;
         .carousel-content {
@@ -60,6 +60,75 @@
 
             .arrow-right {
                 @apply ml-auto;
+            }
+        }
+    }
+}
+
+@screen lg {
+    .testimonials {
+        @apply mt-12;
+        
+        .topic-header {
+            p {
+                width: 450px;
+            }
+        }
+    
+        .testimonials-content {
+            @apply mt-12  text-white w-full pt-20 pb-12 overflow-hidden;
+            border-radius: 45px;
+            background-color: #191A23;
+            .carousel-content {
+                @apply flex relative;
+                z-index: 3;
+                left: -662px;
+                .carousel-item {
+                    @apply flex flex-col w-fit mx-7;
+                    .comment-container {
+                        width: 606px;
+                        height: 266px;
+        
+                        img {
+                            @apply absolute;
+                            z-index: 1;
+                        }
+                        .text-container {
+                            @apply absolute flex justify-center;
+                            width: 606px;
+                            height: 237px;
+                            z-index: 2;
+        
+                            p {
+                                @apply self-center;
+                                width: 532px;
+                            }
+                        }
+                    }
+                    .comentator-name-content {
+                        @apply self-start mt-5;
+                        margin-left: 80px;
+                        .comentator-name {
+                            color: #B9FF66;
+                        }
+                    }
+                }
+            }
+            .carousel-switcher {
+                @apply flex justify-center m-auto mt-20; 
+                max-width: 564px;
+    
+                .arrow-left {
+                    @apply mr-auto;
+                }
+    
+                .carousel-point {
+                    @apply mx-3;
+                }
+    
+                .arrow-right {
+                    @apply ml-auto;
+                }
             }
         }
     }
