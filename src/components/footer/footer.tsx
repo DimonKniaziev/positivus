@@ -18,15 +18,13 @@ const Footer: React.FC = () => {
                         alt="positivus"
                     />
                 </div>
-                <div className="nav-bar">
-                    <ul className="links-list">
-                        <li>About us</li>
-                        <li>Services</li>
-                        <li>Use Cases</li>
-                        <li>Pricing</li>
-                        <li>Blog</li> 
-                    </ul>
-                </div>
+                <ul className="links-list">
+                    <li>About us</li>
+                    <li>Services</li>
+                    <li>Use Cases</li>
+                    <li>Pricing</li>
+                    <li>Blog</li> 
+                </ul>
                 <div className="social-media-icons">
                     <Image
                         src={linkedInIcon}
@@ -52,9 +50,11 @@ const Footer: React.FC = () => {
             <div className="footer-contact-us">
                 <div className="contacts">
                     <h4>Contact us:</h4>
-                    <p>Email: info@positivus.com</p>
-                    <p>Phone: 555-567-8901</p>
-                    <p>Address: 1234 Main St <br/> Moonstone City, Stardust State 12345</p>
+                    <div className="contacts-data">
+                        <p>Email: info@positivus.com</p>
+                        <p>Phone: 555-567-8901</p>
+                        <p>Address: 1234 Main St<br/> Moonstone City, Stardust State 12345</p>
+                    </div>
                 </div>
                 <div className="subscribe-to-news">
                     <input type="email" placeholder="Email"/>
@@ -63,7 +63,26 @@ const Footer: React.FC = () => {
                     </button>                    
                 </div>
             </div>
-
+            <div className="social-media-icons-mobile">
+                    <Image
+                        src={linkedInIcon}
+                        width={30}
+                        height={30}
+                        alt="linkedIn"
+                    />
+                    <Image
+                        src={facebookIcon}
+                        width={30}
+                        height={30}
+                        alt="facebook"
+                    />
+                    <Image
+                        src={twiterIcon}
+                        width={30}
+                        height={30}
+                        alt="twiter"
+                    />
+                </div>
             <div className="line"></div>
             <div className="privacy-policy">
                 <span>

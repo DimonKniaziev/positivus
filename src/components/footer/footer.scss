@@ -1,34 +1,28 @@
 footer {
-    @apply bg-black flex flex-col mt-8  text-white;
-    padding: 55px 60px 50px 60px;
-    border-top-left-radius: 45px;
-    border-top-right-radius: 45px;
+    @apply bg-black flex flex-col mt-8 text-white;
+    padding: 50px 20px 30px 20px;
+    gap: 37px;
 
     .footer-nav-bar {
-        @apply flex justify-between;
+        @apply flex flex-col justify-between items-center;
+        gap: 37px;
 
         .positivus-logo {
-            @apply flex align-text-top mr-4;
-    
-            .logo-icon {
-                @apply mr-3 self-center;
-            }
+            @apply flex align-text-top;
         }
     
-        .nav-bar {
-            @apply flex align-baseline text-xl font-normal align-baseline grow max-w-lg underline;
-    
-            .links-list {
-                @apply flex justify-between grow;
-    
-                li {
-                    @apply self-center; 
-                }
+        .links-list {
+            @apply flex flex-col text-xl font-normal align-baseline justify-between underline;
+            gap: 15px;
+
+            li {
+                @apply self-center; 
             }
         }
 
         .social-media-icons {
             @apply flex;
+            display: none;
             img {
                 @apply mx-2;
             }
@@ -36,29 +30,39 @@ footer {
     }
 
     .footer-contact-us {
-        @apply flex justify-between mt-20;
+        @apply flex flex-col justify-between items-center;
+        gap: 37px;
 
         .contacts {
-            @apply flex flex-col justify-between;
+            @apply flex flex-col justify-between items-center;
+            gap: 37px;
+
             h4 {
-                @apply w-fit px-2 text-black;
+                @apply w-fit text-black;
                 background-color: #B9FF66;
                 border-radius: 7px;
+                padding-left: 7px;
+                padding-right: 7px;
+            }
+
+            .contacts-data {
+                @apply flex flex-col text-center;
+                gap: 15px;
             }
         }
 
         .subscribe-to-news {
-            @apply flex justify-between grow;
-            max-width: 634px;
+            @apply flex flex-col justify-between w-full;
+            gap: 22px;
             background-color: #292A32;
             border-radius: 14px;
-            padding: 58px 40px 58px 40px;
+            padding: 30px;
 
             input {
-                @apply border-white text-white mr-5 grow;
+                @apply border-white text-white w-full;
                 border-width: 1px;
                 border-radius: 14px;
-                padding: 20px 35px 20px 35px;
+                padding: 21px 25px 21px 25px;
                 background-color: #292A32;
             }
             input::placeholder {
@@ -68,26 +72,99 @@ footer {
             button {
                 @apply text-xl text-black;
                 border-radius: 14px;
-                padding: 20px 35px 20px 35px;
+                padding: 21px 25px 21px 25px;
                 background-color: #B9FF66;
             }
         }
     }
 
+    .social-media-icons-mobile {
+        @apply flex justify-center;
+        gap: 20px;
+    }
+
     .line {
-        @apply border-white w-full mt-20;
+        @apply border-white w-full;
         border-width: 1px;
     }
 
     .privacy-policy {
-        @apply mt-20;
-
-        span {
-            @apply mr-10;
-        }
-
+        @apply flex flex-col text-center;
+        gap: 20px;
         a {
             @apply underline;
+        }
+    }
+}
+
+@screen lg {
+    footer {
+        @apply flex flex-col;
+        gap: 50px;
+        padding: 55px 60px 50px 60px;
+        border-top-left-radius: 45px;
+        border-top-right-radius: 45px;
+    
+        .footer-nav-bar {
+            @apply flex flex-row;
+    
+            .positivus-logo {
+                @apply flex align-text-top;
+            }
+
+            .links-list {
+                @apply flex flex-row text-xl font-normal align-baseline grow max-w-lg underline;
+            }
+    
+            .social-media-icons {
+                @apply flex;
+            }
+        }
+    
+        .footer-contact-us {
+            @apply flex flex-row justify-between;
+    
+            .contacts {
+                @apply flex flex-col justify-between items-start grow;
+                max-width: 435px;             
+
+                .contacts-data {
+                    @apply text-start;
+                }
+            }
+    
+            .subscribe-to-news {
+                @apply flex flex-row justify-between;
+                max-width: 634px;
+                background-color: #292A32;
+                border-radius: 14px;
+                padding: 58px 40px 58px 40px;
+    
+                input {
+                    @apply w-1/2;
+                    padding: 20px 35px 20px 35px;
+                }
+                input::placeholder {
+                    @apply text-white self-center;
+                }
+    
+                button {
+                    @apply w-1/2;
+                    padding: 20px 35px 20px 35px;
+                }
+            }
+        }
+
+        .social-media-icons-mobile {
+            display: none;
+        }
+    
+        .privacy-policy {
+            @apply flex flex-row text-start;
+            gap: 40px;
+            a {
+                @apply underline;
+            }
         }
     }
 }
