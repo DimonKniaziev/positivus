@@ -40,8 +40,12 @@ body {
     @apply flex flex-col items-center;
 
     .topic-header-label {
-        @apply rounded-lg w-fit px-2 mr-10 flex;
+        @apply rounded-lg w-fit px-2 flex;
         background-color: #B9FF66;
+    }
+
+    p {
+        @apply text-center mt-8;
     }
 }
 
@@ -56,6 +60,7 @@ body {
         font-size: 60px;
         line-height: 77px;
     }
+
     h2 {
         @apply font-medium;
         font-size: 40px;
@@ -86,6 +91,10 @@ body {
         .topic-header-label {
             @apply rounded-lg w-fit px-2 mr-10 flex;
             background-color: #B9FF66;
+        }        
+
+        p {
+            @apply text-start mt-0;
         }
     }
 }
