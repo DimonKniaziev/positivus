@@ -1,15 +1,12 @@
 .get-proposal {
     @apply mt-20 flex justify-between items-center;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding: 50px;
     border-radius: 45px;
     background-color: #F3F3F3;
-    height: 347px;
 
     .get-proposal-content {
-        @apply flex flex-col justify-between;
-        width: 500px;
-        height: 227px;
+        @apply flex flex-col justify-between items-center;
+        gap: 20px;
 
         h3 {
             @apply font-medium text-3xl;
@@ -20,7 +17,41 @@
             line-height: 23px;
         }
         button {
-            @apply bg-black text-white text-xl font-normal rounded-xl px-9 py-5 w-fit;
+            @apply bg-black text-white text-xl font-normal rounded-xl px-9 py-5 w-full;
+        }
+    }
+
+    img {
+        display: none;
+    }
+}
+
+@screen lg {
+    .get-proposal {
+        @apply mt-20 flex justify-between items-center;
+        padding: 60px;
+        height: 347px;
+    
+        .get-proposal-content {
+            @apply items-start;
+            width: 500px;
+            gap: 26px;
+    
+            h3 {
+                @apply font-medium text-3xl;
+                line-height: 38px;
+            }
+            p {
+                @apply font-normal text-lg;
+                line-height: 23px;
+            }
+            button {
+                @apply text-xl font-normal rounded-xl px-9 py-5 w-fit;
+            }
+        }
+    
+        img {
+            display: block;
         }
     }
 }
