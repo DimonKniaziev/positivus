@@ -1,23 +1,14 @@
 .get-proposal {
-    @apply mt-20 flex justify-between items-center;
+    @apply flex mt-20 justify-between items-center bg-gray;
     padding: 50px;
     border-radius: 45px;
-    background-color: #F3F3F3;
 
     .get-proposal-content {
         @apply flex flex-col justify-between items-center;
         gap: 20px;
 
-        h3 {
-            @apply font-medium text-3xl;
-            line-height: 38px;
-        }
-        p {
-            @apply font-normal text-lg;
-            line-height: 23px;
-        }
         button {
-            @apply bg-black text-white text-xl font-normal rounded-xl px-9 py-5 w-full;
+            @apply bg-black text-white w-full;
         }
     }
 
@@ -28,7 +19,6 @@
 
 @screen lg {
     .get-proposal {
-        @apply mt-20 flex justify-between items-center;
         padding: 60px;
         height: 347px;
     
@@ -36,17 +26,9 @@
             @apply items-start;
             width: 500px;
             gap: 26px;
-    
-            h3 {
-                @apply font-medium text-3xl;
-                line-height: 38px;
-            }
-            p {
-                @apply font-normal text-lg;
-                line-height: 23px;
-            }
+
             button {
-                @apply text-xl font-normal rounded-xl px-9 py-5 w-fit;
+                @apply w-fit;
             }
         }
     

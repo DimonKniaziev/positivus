@@ -3,13 +3,14 @@
 
     .working-process-content {
         @apply flex flex-col justify-between mt-10;
+        gap: 20px;
 
         .active-content {            
-            background-color: #B9FF66;
+            @apply bg-green;
         }
 
         .inactive-content {
-            background-color: #F3F3F3;
+            @apply bg-gray;
 
             .working-process-content-item-border {
                 display: none;
@@ -21,38 +22,41 @@
         }
 
         .working-process-content-item {
-            @apply mb-7;
+            @apply border-black;
             padding: 30px;
             border-radius: 45px;
-            border-width: 1px 1px 5px 1px;
-            border-color: black;
+            border-width: 1px;
+            border-bottom-width: 5px;
 
             .working-process-content-item-header {
                 @apply flex justify-between;
 
                 .working-process-content-item-header-label {
                     @apply flex;
+
                     .number {
                         @apply font-medium mr-3;
                         font-size: 30px;
                         line-height: 38px;
                     }
+
                     h3 {
                         @apply self-center font-medium;
                         font-size: 18px;
                         line-height: 23px;
                     }
                 }
+                button {
+                    @apply p-0;
+                }
                 img {
-                    @apply flex shrink-0;
                     width: 30px;
                     height: 30px;
                 }
             }
 
             .working-process-content-item-border {
-                @apply w-full my-5;
-                border-color: black;
+                @apply w-full my-5 border-black;
                 border-width: 1px;
             }
         }
@@ -64,27 +68,24 @@
         @apply mt-20;
     
         .working-process-content {
-            @apply flex flex-col justify-between mt-20;
-    
+            @apply mt-20;
+            gap: 30px;
+
             .working-process-content-item {
-                @apply mb-7;
-                padding: 41px 60px 41px 60px;
-                border-radius: 45px;
-                border-width: 1px 1px 5px 1px;
-                border-color: black;
+                padding: 41px 60px;
     
                 .working-process-content-item-header {
-                    @apply flex justify-between;
-    
                     .working-process-content-item-header-label {
-                        @apply flex;
                         .number {
                             @apply font-medium mr-6;
                             font-size: 60px;
                             line-height: 77px;
                         }
+
                         h3 {
-                            @apply self-center
+                            @apply self-center;
+                            font-size: 30px;
+                            line-height: 38px;
                         }
                     }
 
@@ -95,9 +96,7 @@
                 }
     
                 .working-process-content-item-border {
-                    @apply w-full my-10;
-                    border-color: black;
-                    border-width: 1px;
+                    @apply my-10;
                 }
             }
         }

@@ -5,7 +5,7 @@ header {
     .positivus-logo {
         @apply self-center;
         width: 144px;
-        height: 24px;        
+        height: 24px;
     }
 
     .nav-bar {
@@ -20,7 +20,9 @@ header {
             }
 
             .quote-request-button {
-                @apply border-black border-2 rounded-xl text-center;
+                @apply border-black text-center;
+                border-width: 1px;
+                border-radius: 14px;
                 padding: 20px 35px 20px 35px;
             }
         }

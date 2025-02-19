@@ -40,13 +40,18 @@ body {
     @apply flex flex-col items-center;
 
     .topic-header-label {
-        @apply rounded-lg w-fit px-2 flex;
-        background-color: #B9FF66;
+        @apply flex w-fit px-2 bg-green;
+        border-radius: 7px;
     }
 
     p {
         @apply text-center mt-8;
     }
+}
+button {
+    @apply text-xl;
+    border-radius: 14px;
+    padding: 20px 35px;
 }
 
 @screen lg {
@@ -86,11 +91,10 @@ body {
     }
 
     .topic-header {
-        @apply flex flex-row;
+        @apply flex-row;
     
         .topic-header-label {
-            @apply rounded-lg w-fit px-2 mr-10 flex;
-            background-color: #B9FF66;
+            @apply mr-10;
         }        
 
         p {

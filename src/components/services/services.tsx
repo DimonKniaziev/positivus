@@ -23,7 +23,7 @@ const Services: React.FC = () => {
                 </p>
             </div>
             <div className="services-content">
-                <div className="services-content-item item-background-grey">
+                <div className="services-content-item bg-gray">
                     <div className="services-content-item-info">
                         <div className="service-content-item-label item-label-green">
                             <h3>Search engine</h3>
@@ -62,9 +62,9 @@ const Services: React.FC = () => {
                         />
                     </div>
                 </div>
-                <div className="services-content-item item-background-green">
+                <div className="services-content-item bg-green">
                     <div className="services-content-item-info">
-                        <div className="service-content-item-label item-label-grey">
+                        <div className="service-content-item-label item-label-white">
                             <h3>Pay-per-click</h3>
                             <h3>advertising</h3>
                         </div>
@@ -101,9 +101,9 @@ const Services: React.FC = () => {
                         />
                     </div>
                 </div>            
-                <div className="services-content-item item-background-black">
+                <div className="services-content-item bg-dark">
                     <div className="services-content-item-info">
-                        <div className="service-content-item-label item-label-grey">
+                        <div className="service-content-item-label item-label-white">
                             <h3>Social media</h3>
                             <h3>marketing</h3>
                         </div>
@@ -140,7 +140,7 @@ const Services: React.FC = () => {
                         />
                     </div>
                 </div>
-                <div className="services-content-item item-background-grey">
+                <div className="services-content-item bg-gray">
                     <div className="services-content-item-info">
                         <div className="service-content-item-label item-label-green">
                             <h3>Email</h3>
@@ -179,7 +179,7 @@ const Services: React.FC = () => {
                         />
                     </div>
                 </div>            
-                <div className="services-content-item item-background-green">
+                <div className="services-content-item bg-green">
                     <div className="services-content-item-info">
                         <div className="service-content-item-label item-label-white">
                             <h3>Coontent</h3>
@@ -218,7 +218,7 @@ const Services: React.FC = () => {
                         />
                     </div>
                 </div>
-                <div className="services-content-item item-background-black">
+                <div className="services-content-item bg-dark">
                     <div className="services-content-item-info">
                         <div className="service-content-item-label item-label-green">
                             <h3>Analytics and</h3>

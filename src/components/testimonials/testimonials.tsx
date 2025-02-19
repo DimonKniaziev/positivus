@@ -1,7 +1,6 @@
 'use client'
 import React from "react";
 import "./testimonials.scss";
-import bubble from './Bubble.svg';
 import Image from "next/image";
 import inactiveCarouselPoint from "./Inactive-carousel-point.svg";
 import activeCarouselPoint from "./Active-carousel-point.svg";
@@ -25,17 +24,9 @@ const Testimonials: React.FC = () => {
                 <div className="carousel-content">
                     <div className="carousel-item">
                         <div className="comment-container">
-                            <Image
-                                src={bubble}
-                                width={606}
-                                height={266}
-                                alt="bubble"
-                            />
-                            <div className="text-container">
-                                <p>
-                                    {`"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."`}
-                                </p>
-                            </div>
+                            <p>
+                                {`"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."`}
+                            </p>
                         </div>
                         <div className="comentator-name-content">
                             <h4 className="comentator-name">
@@ -46,17 +37,9 @@ const Testimonials: React.FC = () => {
                     </div>
                     <div className="carousel-item">
                         <div className="comment-container">
-                            <Image
-                                src={bubble}
-                                width={606}
-                                height={266}
-                                alt="bubble"
-                            />
-                            <div className="text-container">
-                                <p>
-                                    {`"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."`}
-                                </p>
-                            </div>
+                            <p>
+                                {`"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."`}
+                            </p>
                         </div>
                         <div className="comentator-name-content">
                             <h4 className="comentator-name">
@@ -67,17 +50,9 @@ const Testimonials: React.FC = () => {
                     </div>
                     <div className="carousel-item">
                         <div className="comment-container">
-                            <Image
-                                src={bubble}
-                                width={606}
-                                height={266}
-                                alt="bubble"
-                            />
-                            <div className="text-container">
-                                <p>
-                                    {`"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."`}
-                                </p>
-                            </div>
+                            <p>
+                                {`"We have been working with Positivus for the past year and have seen a significant increase in website traffic and leads as a result of their efforts. The team is professional, responsive, and truly cares about the success of our business. We highly recommend Positivus to any company looking to grow their online presence."`}
+                            </p>
                         </div>
                         <div className="comentator-name-content">
                             <h4 className="comentator-name">
@@ -85,8 +60,7 @@ const Testimonials: React.FC = () => {
                             </h4>
                             <span>Marketing Director at XYZ Corp</span>
                         </div>
-                    </div>
-                   
+                    </div>                   
                 </div>
                 <div className="carousel-switcher">
                     <button className="arrow-left">

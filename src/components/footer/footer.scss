@@ -2,6 +2,8 @@ footer {
     @apply bg-black flex flex-col mt-8 text-white;
     padding: 50px 20px 30px 20px;
     gap: 37px;
+    margin-left: -20px;
+    margin-right: -20px;
 
     .footer-nav-bar {
         @apply flex flex-col justify-between items-center;
@@ -38,8 +40,7 @@ footer {
             gap: 37px;
 
             h4 {
-                @apply w-fit text-black;
-                background-color: #B9FF66;
+                @apply w-fit text-black bg-green;
                 border-radius: 7px;
                 padding-left: 7px;
                 padding-right: 7px;
@@ -52,9 +53,8 @@ footer {
         }
 
         .subscribe-to-news {
-            @apply flex flex-col justify-between w-full;
+            @apply flex flex-col justify-between w-full bg-dark;
             gap: 22px;
-            background-color: #292A32;
             border-radius: 14px;
             padding: 30px;
 
@@ -70,10 +70,9 @@ footer {
             }
 
             button {
-                @apply text-xl text-black;
+                @apply text-xl text-black bg-green;
                 border-radius: 14px;
                 padding: 21px 25px 21px 25px;
-                background-color: #B9FF66;
             }
         }
     }
@@ -99,7 +98,7 @@ footer {
 
 @screen lg {
     footer {
-        @apply flex flex-col;
+        @apply flex flex-col mx-0;
         gap: 50px;
         padding: 55px 60px 50px 60px;
         border-top-left-radius: 45px;
@@ -107,13 +106,9 @@ footer {
     
         .footer-nav-bar {
             @apply flex flex-row;
-    
-            .positivus-logo {
-                @apply flex align-text-top;
-            }
 
             .links-list {
-                @apply flex flex-row text-xl font-normal align-baseline grow max-w-lg underline;
+                @apply flex flex-row grow max-w-lg;
             }
     
             .social-media-icons {
@@ -122,10 +117,10 @@ footer {
         }
     
         .footer-contact-us {
-            @apply flex flex-row justify-between;
+            @apply flex flex-row;
     
             .contacts {
-                @apply flex flex-col justify-between items-start grow;
+                @apply items-start grow;
                 max-width: 435px;             
 
                 .contacts-data {
@@ -134,18 +129,13 @@ footer {
             }
     
             .subscribe-to-news {
-                @apply flex flex-row justify-between;
+                @apply flex flex-row;
                 max-width: 634px;
-                background-color: #292A32;
-                border-radius: 14px;
                 padding: 58px 40px 58px 40px;
     
                 input {
                     @apply w-1/2;
                     padding: 20px 35px 20px 35px;
-                }
-                input::placeholder {
-                    @apply text-white self-center;
                 }
     
                 button {
@@ -162,9 +152,6 @@ footer {
         .privacy-policy {
             @apply flex flex-row text-start;
             gap: 40px;
-            a {
-                @apply underline;
-            }
         }
     }
 }

@@ -5,7 +5,7 @@
         @apply flex flex-col justify-around;
 
         button {
-            @apply rounded-2xl bg-black text-white px-9 py-5 w-full mt-8;
+            @apply bg-dark text-white w-full mt-8;
         }
     }
     .main-1-image {
@@ -33,7 +33,7 @@
 
 @screen lg {
     .main-1 {
-        @apply flex flex-row justify-between mt-16;
+        @apply justify-between mt-16;
     
         .main-1-contant {
             @apply flex flex-col justify-between;
@@ -44,7 +44,7 @@
             }
     
             button {
-                @apply rounded-2xl bg-black text-white px-9 py-5 w-fit;
+                @apply w-fit;
             }
         }
 
